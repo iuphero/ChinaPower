@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>中国各省份电力使用情况</title>
+    <style>
+      .box {
+        display: flex;
+        width: 100%;
+      }
+
+      #map {
+        width: 70%;
+        height: 700px;
+      }
+
+      #bar {
+        width: 30%;
+        height: 700px;
+      }
+
+      #downLink {
+        font-size: 12px;
+        color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+      <div id="map"></div>
+      <div id="bar"></div>
+    </div>
+
+    <div class="others">
+      <a id="downLink" target="_blank" href="http://www.stats.gov.cn/tjsj/ndsj/2014/zk/html/Z0914C.xls">点此可下载数据来源</a>
+    </div>
+
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="china.js" charset="utf-8"></script>
+</body>
